@@ -1,8 +1,12 @@
 import React from 'react';
 import { IoMdCheckmark } from "react-icons/io";
 import { useState } from 'react';
-const DigitalToolCard = ({digitalTool}) => {
+const DigitalToolCard = ({digitalTool,carts,setCarts}) => {
     const [isBuy,setBuy]=useState(false);
+    const handleBuy=()=>{
+        setBuy(true);
+        setCarts([...carts,digitalTool])
+    }
     return (
        <div>
                            <div className='shadow-lg rounded-lg border border-zinc-200 overflow-hidden p-5'>
@@ -28,7 +32,7 @@ const DigitalToolCard = ({digitalTool}) => {
                                    }
                                </div>
                               
-                               <button onClick={()=>setBuy(true)} className='btn-primary  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl p-3 text-white w-full'>{isBuy ? "Proceed to checkout": " Buy Now"}</button>
+                               <button onClick={handleBuy} className='btn-primary  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl p-3 text-white w-full'>{isBuy ? "Proceed to checkout": " Buy Now"}</button>
                            </div>
                            </div>
     );

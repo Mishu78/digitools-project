@@ -1,7 +1,10 @@
 import React from 'react';
 
+
 const Info = () => {
+    
     return (
+        <div>
         <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white flex justify-center p-6  mt-40'>
            <div className='mr-10 text-center '>
             <h1 className='text-5xl font-bold'>50K+</h1>
@@ -16,6 +19,7 @@ const Info = () => {
             <p>Rating</p>
             </div> 
         </div>
+</div>
     );
 };
 
