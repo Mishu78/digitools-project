@@ -15,7 +15,7 @@ return res.json();
 const digitalToolsPromise = getDigitalTools();
 
 function App() {
- const [activeTab,setActiveTab]=useState('products');
+ const [activeTab,setActiveTab]=useState('digitalTool');
  const [carts,setCarts]=useState([]);
   return (
     <>
@@ -23,13 +23,13 @@ function App() {
      <Banner></Banner>
      <Info></Info>
      <div className="tabs tabs-box justify-center">
-  <input type="radio" name="my_tabs_1" className="tab btn-primary  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl p-3 text-white" aria-label="Products" defaultChecked onClick={()=>setActiveTab('products')} />
-  <input type="radio" name="my_tabs_1" className="tab btn-primary rounded-4xl p-3" aria-label="Cart" onClick={()=>setActiveTab('cart')}/>
+  <input type="radio" name="my_tabs_1" className="tab btn-primary w-40  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl p-3 text-white" aria-label="Products" defaultChecked onClick={()=>setActiveTab('digitalTool')} />
+  <input type="radio" name="my_tabs_1" className="tab btn-primary w-40 rounded-4xl p-3" aria-label="Cart" onClick={()=>setActiveTab('cart')}/>
 </div>
      
-      {activeTab==='products' &&<DigitalTools digitalToolsPromise={digitalToolsPromise}></DigitalTools>}
+      {activeTab==='digitalTool' &&<DigitalTools digitalToolsPromise={digitalToolsPromise} carts={carts} setCarts={setCarts}></DigitalTools>}
      
-     {activeTab==='cart' && <Cart carts={carts}>Cart</Cart>}
+     {activeTab==='cart' && <Cart carts={carts} setCarts={setCarts}>Cart</Cart>}
    
     </>
   )
