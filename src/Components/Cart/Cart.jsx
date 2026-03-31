@@ -18,7 +18,7 @@ const Cart = ({carts,setCarts}) => {
             <h2 className='text-2xl font-bold mb-5'>Your cart</h2>
 
             {
-                carts.length===0 ? <p className='text-5xl text-gray-500 font-bold mt-40 text-center mb-40'>Cart is empty</p> : 
+                carts.length===0 ? <p className='text-5xl text-gray-500 font-bold mt-40 text-center mb-40  justify-items-center self-center'><img className="w-9" src="/src/assets/products/shopping-cart.png" alt="" /> Cart is empty</p> : 
                 <>
                  <div>
                     {
