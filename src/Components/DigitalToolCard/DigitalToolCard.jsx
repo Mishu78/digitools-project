@@ -1,11 +1,18 @@
 import React from 'react';
 import { IoMdCheckmark } from "react-icons/io";
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 const DigitalToolCard = ({digitalTool,carts,setCarts}) => {
     const [isBuy,setBuy]=useState(false);
     const handleBuy=()=>{
         setBuy(true);
-        setCarts([...carts,digitalTool])
+        const isFound = carts.find((item) => item.id === digitalTool.id)
+        if(isFound){
+            toast.error("Item Already in Cart!");
+            return
+        }
+        setCarts([...carts,digitalTool]);
+        toast.success("Item Added to Cart!");
     }
     return (
        <div>
@@ -32,7 +39,8 @@ const DigitalToolCard = ({digitalTool,carts,setCarts}) => {
                                    }
                                </div>
                               
-                               <button onClick={handleBuy} className='btn-primary  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl p-3 text-white w-full'>{isBuy ? "Proceed to checkout": " Buy Now"}</button>
+                               <button onClick={handleBuy} className={`btn-primary rounded-4xl p-3 text-white w-full ${isBuy ? "bg-green-500":'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`}>{isBuy ? "Added to Cart !": " Buy Now"}</button>
+                               
                            </div>
                            </div>
     );

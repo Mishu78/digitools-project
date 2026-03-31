@@ -1,14 +1,17 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({carts,setCarts}) => {
     
     const totalPrice = carts.reduce((sum,item)=>sum+item.price,0);
     const handlePayment=()=>{
         setCarts([]);
+        toast.success("Payment Successfull!");
     }
     const handleRemove = (item)=>{
          const filteredArray=carts.filter(cart=>cart.id !== item.id)
          setCarts(filteredArray);
+         toast.success("Item Removed Successfully!");
     }
     return (
         <div className='container mx-auto'>

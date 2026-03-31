@@ -23,8 +23,8 @@ function App() {
      <Banner></Banner>
      <Info></Info>
      <div className="tabs tabs-box justify-center">
-  <input type="radio" name="my_tabs_1" className="tab btn-primary w-40  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl p-3 text-white" aria-label="Products" defaultChecked onClick={()=>setActiveTab('digitalTool')} />
-  <input type="radio" name="my_tabs_1" className="tab btn-primary w-40 rounded-4xl p-3" aria-label="Cart" onClick={()=>setActiveTab('cart')}/>
+  <input type="radio" name="my_tabs_1" className={`tab btn-primary w-40 ${activeTab ==='digitalTool' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': 'bg-transparent'}  rounded-4xl p-3}`} aria-label="Products" defaultChecked onClick={()=>setActiveTab('digitalTool')} />
+  <input type="radio" name="my_tabs_1" className={`tab btn-primary w-40 ${activeTab ==='cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': 'bg-transparent'}  rounded-4xl p-3 }`} aria-label={`Cart (${carts.length})`} onClick={()=>setActiveTab('cart')}/>
 </div>
      
       {activeTab==='digitalTool' &&<DigitalTools digitalToolsPromise={digitalToolsPromise} carts={carts} setCarts={setCarts}></DigitalTools>}
