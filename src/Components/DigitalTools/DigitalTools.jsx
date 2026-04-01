@@ -8,7 +8,7 @@ const DigitalTools = ({digitalToolsPromise,carts,setCarts}) => {
         
         <div className='mt-20 container justify-items-center mx-auto'>
             
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-10'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-10 mr-15 ml-15'>
                 {
                    digitalTools.map(digitalTool => (
                     <DigitalToolCard key={digitalTool.id} digitalTool={digitalTool} carts={carts} setCarts={setCarts}></DigitalToolCard>

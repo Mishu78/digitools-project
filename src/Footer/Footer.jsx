@@ -2,12 +2,14 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='md:text-center sm:text-center bg-black text-white container justify-center mx-auto items-center'>
-            <footer className="md:text-center sm:text-center container justify-center mx-auto items-center gap-40 footer sm:footer-horizontal p-10 bg-black text-white">
-  <nav>
+        <div className=' md:text-center sm:text-center bg-black text-white w-full justify-center mx-auto items-center'>
+            <footer className=" grid lg:grid-cols-5 md:grid-cols-1 grid-cols-1 sm:grid-cols-1 max-w-7xl justify-center mx-auto items-center gap-10 footer sm:footer-horizontal p-10 bg-black text-white">
+                
+  <nav className='justify-start text-start'>
     <h6 className="font-bold text-4xl mb-3">DigiTools</h6>
     <p>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
   </nav>
+
   <nav>
     <h6 className="footer-title">Product</h6>
     <a className="link link-hover">Features</a>
