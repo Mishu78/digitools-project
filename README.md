@@ -1,16 +1,34 @@
-# React + Vite
+                                                            DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview:
 
-Currently, two official plugins are available:
+DigiTools is a simple and user-friendly web application where users can browse and purchase digital courses.All the courses showed as cards. Users can select their preferred courses, add them to the cart, view total price, remove items, and proceed to checkout.How many courses they are adding it shows in navbar cart and also beside the cart tab. The app also shows toast notifications for actions like adding, removing, and successful checkout.They can also see the total cost of courses they have added.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Technologies Used:
 
-## React Compiler
+1.React.js
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2.Tailwind CSS
 
-## Expanding the ESLint configuration
+3.DaisyUI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4.JavaScript (ES6+)
+
+5.React-Toastify (NPM Package)
+
+6.JSON (for product data)
+
+
+Features:
+
+Smart Cart System
+
+Users can easily add courses to the cart, see the total price instantly, and remove any item anytime. This makes the shopping experience smooth and flexible.
+
+Instant Notifications
+
+The application uses toast messages to notify users when a product is added, removed, or when checkout is completed successfully.
+
+Simple & Interactive UI
+
+The interface is clean, responsive, and easy to use. Users can quickly navigate, select courses, and complete their purchase without confusion.
