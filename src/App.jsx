@@ -22,11 +22,11 @@ function App() {
  const [carts,setCarts]=useState([]);
   return (
     <>
-       <NavBar></NavBar>
+       <NavBar carts={carts}></NavBar>
      <Banner></Banner>
      <Info></Info>
      <div className="tabs tabs-box justify-center">
-  <input type="radio" name="my_tabs_1" className={`tab btn-primary w-40 ${activeTab ==='digitalTool' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': 'bg-transparent'}  rounded-4xl p-3}`} aria-label="Products" defaultChecked onClick={()=>setActiveTab('digitalTool')} />
+  <input type="radio" name="my_tabs_1" className={`tab btn-primary w-40 ${activeTab ==='digitalTool' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': 'bg-transparent'}  rounded-4xl p-3`} aria-label="Products" defaultChecked onClick={()=>setActiveTab('digitalTool')} />
   <input type="radio" name="my_tabs_1" className={`tab btn-primary w-40 ${activeTab ==='cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': 'bg-transparent'}  rounded-4xl p-3 }`} aria-label={`Cart (${carts.length})`} onClick={()=>setActiveTab('cart')}/>
 </div>
      

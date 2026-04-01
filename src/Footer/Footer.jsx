@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-black text-white container justify-center mx-auto items-center'>
-            <footer className="container justify-center mx-auto items-center gap-40 footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-black text-white">
+        <div className='md:text-center sm:text-center bg-black text-white container justify-center mx-auto items-center'>
+            <footer className="md:text-center sm:text-center container justify-center mx-auto items-center gap-40 footer sm:footer-horizontal p-10 bg-black text-white">
   <nav>
     <h6 className="font-bold text-4xl mb-3">DigiTools</h6>
     <p>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
@@ -70,9 +70,9 @@ const Footer = () => {
     
   </footer>
 <div className="divider before:bg-gray-600 after:bg-gray-600 text-gray-600"></div>
-     <div className='flex pl-10 pr-10 mb-5 container justify-between pb-10 mx-auto items-center'>
+     <div className='md:text-center sm:text-center lg:flex pl-10 pr-10 mb-5 container justify-between pb-10 mx-auto items-center'>
         <p className="text-gray-400">Copyright © {new Date().getFullYear()} - All right reserved</p>
-        <div className="flex text-gray-400 gap-8">
+        <div className="flex text-gray-400 gap-8 md:justify-center">
             <a href="">Privacy Policy</a>
             <a href="">Terms of Service</a>
             <a href="">Cookies</a>

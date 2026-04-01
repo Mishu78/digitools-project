@@ -1,6 +1,7 @@
 import React from 'react';
 
-const NavBar = () => {
+const NavBar = ({carts}) => {
+  
     return (
         <div className=' mb-10 container justify-items-center mx-auto'>
         
@@ -33,7 +34,12 @@ const NavBar = () => {
   </div>
   <div className="navbar-end">
     <div className='flex items-center gap-4'>
+      <div className='relative'>
         <img src="/src/assets/products/shopping-cart.png" alt="" />
+
+        <div title='{`Cart (${carts.length})`}' className="bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center absolute -right-3 -top-3">{carts.length}</div>
+      </div>
+    
         <h3>Login</h3>
          <a className="btn rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Get Started</a>
     </div>
