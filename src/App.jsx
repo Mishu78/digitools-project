@@ -8,6 +8,7 @@ import Cart from './Components/Cart/Cart'
 import { useState } from 'react'
 import Steps from './Components/Steps/Steps'
 import Started from './Components/Started/Started'
+import Footer from './Footer/Footer'
 
 
 const getDigitalTools = async() =>{
@@ -34,6 +35,7 @@ function App() {
      {activeTab==='cart' && <Cart carts={carts} setCarts={setCarts}>Cart</Cart>}
    <Steps></Steps>
    <Started></Started>
+   <Footer></Footer>
     </>
   )
 }

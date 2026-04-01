@@ -13,7 +13,7 @@ const Started = () => {
                 <div className="card bg-gray-100 shadow-sm ">
   <div className="card-body">
     <div className="pb-3">
-      <h2 className="text-3xl font-bold">Starter</h2>
+      <h2 className="text-3xl font-bold mb-4">Starter</h2>
       <p className='mb-5 text-gray-600'>Perfect for getting started</p>
       <span className="text-xl"><span className='font-bold text-4xl'>$0</span>/month</span>
     </div>
@@ -45,7 +45,7 @@ const Started = () => {
   <div className="card-body">
     <span className="badge badge-lg badge-warning rounded-4xl font-bold text-red-500 bg-amber-200 self-center absolute -top-3">Most Popular</span>
     <div className="pb-3">
-      <h2 className="text-3xl font-bold">Pro</h2>
+      <h2 className="text-3xl font-bold mb-2">Pro</h2>
       <p className='mb-5'>Best for professionals</p>
       <span className="text-xl"><span className='font-bold text-4xl'>$29</span>/Month</span>
     </div>
@@ -84,7 +84,7 @@ const Started = () => {
 <div className="card bg-gray-100 shadow-sm">
   <div className="card-body">
     <div className="pb-3">
-      <h2 className="text-3xl font-bold">Enterprise</h2>
+      <h2 className="text-3xl font-bold mb-2">Enterprise</h2>
       <p className='mb-5 text-gray-600'>For teams and businesses</p>
       <span className="text-xl"><span className='font-bold text-4xl'>$99</span>/Month</span>
     </div>
